@@ -4,58 +4,143 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mon Bon Voyage — Support</title>
+
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; margin: 0; background: #0b0b0b; color: #f4f4f4; }
-    .wrap { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-    .card { background: #151515; border: 1px solid #2a2a2a; border-radius: 16px; padding: 24px; margin-top: 16px; }
-    h1 { font-size: 28px; margin: 0 0 10px; }
-    p { line-height: 1.5; color: #d7d7d7; }
-    a { color: #7dd3fc; }
-    code { background: #101010; padding: 2px 6px; border-radius: 6px; }
-    .btn { display: inline-block; margin-top: 10px; padding: 10px 14px; background: #2a2a2a; border-radius: 10px; color: #fff; text-decoration: none; }
-    .small { font-size: 13px; color: #a9a9a9; }
-    ul { margin: 8px 0 0 18px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      margin: 0;
+      background: #0b0b0b;
+      color: #f4f4f4;
+    }
+
+    .wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: #151515;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 16px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 0 0 10px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    p {
+      line-height: 1.5;
+      color: #d7d7d7;
+    }
+
+    a {
+      color: #7dd3fc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      margin: 8px 0 0 18px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    code {
+      background: #101010;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: #2a2a2a;
+      border-radius: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .small {
+      font-size: 13px;
+      color: #a9a9a9;
+    }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <h1>Mon Bon Voyage — Support</h1>
-    <p>Need help? You can contact us and find answers to common questions below.</p>
+    <p>
+      Need help with the app? You can contact us or find answers to common questions below.
+    </p>
 
     <div class="card">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:SUPPORT_EMAIL_HERE">bonvoyagemon@gmail.com</a></p>
-      <p class="small">We usually reply within 1–2 business days.</p>
+      <p>
+        Email: <a href="mailto:bonvoyagemon@gmail.com">bonvoyagemon@gmail.com</a>
+      </p>
+      <p class="small">
+        We usually reply within 1–2 business days.
+      </p>
     </div>
 
     <div class="card">
       <h2>Subscriptions</h2>
       <ul>
-        <li><b>Restore purchases:</b> Open the app → Premium screen → tap <i>Restore purchases</i>.</li>
-        <li><b>Cancel subscription:</b> iPhone Settings → Apple ID → Subscriptions → Mon Bon Voyage → Cancel.</li>
-        <li><b>Billing:</b> Subscriptions renew automatically unless canceled at least 24 hours before renewal.</li>
+        <li>
+          <b>Restore purchases:</b> Open the app → Premium screen → tap <i>Restore purchases</i>.
+        </li>
+        <li>
+          <b>Cancel subscription:</b> iPhone Settings → Apple ID → Subscriptions → Mon Bon Voyage → Cancel.
+        </li>
+        <li>
+          <b>Billing:</b> Subscriptions renew automatically unless canceled at least 24 hours before renewal.
+        </li>
       </ul>
     </div>
 
     <div class="card">
       <h2>FAQ</h2>
       <ul>
-        <li><b>I can’t restore purchases.</b> Make sure you’re signed into the same Apple ID used to purchase.</li>
-        <li><b>The app isn’t saving.</b> Try closing and reopening the app, then update to the latest version.</li>
+        <li>
+          <b>I can’t restore purchases.</b> Make sure you’re signed in with the same Apple ID used to purchase.
+        </li>
+        <li>
+          <b>The app isn’t saving my data.</b> Try closing and reopening the app, and ensure you’re on the latest version.
+        </li>
       </ul>
     </div>
 
     <div class="card">
       <h2>Privacy</h2>
       <p>
-        We only use your data to provide the app’s features. For privacy questions, contact us at the email above.
+        We only use your data to provide the app’s features. We do not sell personal data.
+        If you have privacy-related questions, please contact us using the email above.
       </p>
-      <p class="small">Last updated: <span id="d"></span></p>
+      <p class="small">
+        Last updated: <span id="d"></span>
+      </p>
     </div>
   </div>
 
   <script>
-    document.getElementById("d").textContent = new Date().toISOString().slice(0,10);
+    document.getElementById("d").textContent =
+      new Date().toISOString().slice(0, 10);
   </script>
 </body>
 </html>
